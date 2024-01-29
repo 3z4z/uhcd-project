@@ -1,0 +1,44 @@
+#navbar {
+    margin-bottom: 1rem;
+    padding-left: $sidebar-width;
+    width: 100%;
+    padding: 1.5rem 1.5rem 1.5rem $sidebar-width;
+    box-shadow: 0 1px 4px 0 rgba($black, 0.25);
+    .search-container {
+        width: 30%;
+        position: relative;
+        input {
+            width: 100%;
+        }
+        button {
+            border-radius: 50%;
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        @media screen and (max-width: 991px) {
+            width: 40%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 576px) {
+            width: 75%;
+        }
+    }
+    .user-button {
+        width: 32px;
+        height: 32px;
+        line-height: 30px;
+        font-size: 1rem;
+        text-align: center;
+        border: 1px solid #969eab;
+        color: #969eab;
+        background-color: transparent;
+        border-radius: 50%;
+        &:hover {
+            box-shadow: 0 2px 3px 0 rgba($black, 0.25);
+        }
+    }
+}

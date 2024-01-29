@@ -1,0 +1,20 @@
+input {
+    &.form-control {
+        border: none;
+        box-shadow: 0 0 0 0.45px $input-border-color;
+        &::placeholder {
+            color: $input-placeholder-color;
+        }
+        &:focus {
+            box-shadow: 0 0 0 1px $input-border-color;
+        }
+    }
+}
+
+#login {
+    input {
+        &.form-control {
+            background-color: $input-bg;
+        }
+    }
+}

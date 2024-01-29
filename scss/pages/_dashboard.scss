@@ -1,0 +1,6 @@
+@import '../components/sidebar';
+@import '../components/navbar';
+
+#dashboard-body {
+    padding-left: calc(#{$sidebar-width} + 0.75rem );
+}

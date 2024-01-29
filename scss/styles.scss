@@ -1,0 +1,22 @@
+@import './variables/colors';
+@import './variables/sizes';
+@import './components/fonts';
+@import './components/forms';
+@import './pages/login';
+@import './pages/dashboard';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto-regular';
+    transition: all ease-in-out 0.15s;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, dl {
+    list-style: none;
+}

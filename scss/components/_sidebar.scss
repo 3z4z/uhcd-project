@@ -1,0 +1,19 @@
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    width: $sidebar-width;
+    background-color: $sidebar-bg;
+    .sidebar-navmenu {
+        margin-top: 2rem;
+        .sidebar-navitem {
+            margin: 1rem 0;
+            color: $black;
+            &.active {
+                font-family: 'roboto-bold';
+            }
+        }
+    }
+}
