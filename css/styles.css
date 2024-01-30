@@ -2,6 +2,22 @@
   color: #000;
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1075px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1175px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
 @font-face {
   font-family: "roboto-regular";
   src: url(../../assets/fonts/Roboto-Regular.ttf);
@@ -69,29 +85,42 @@ input.form-control:focus {
   left: 0;
   height: 100vh;
   overflow-y: auto;
-  width: 15rem;
+  width: 3rem;
   background-color: #cad3db;
 }
 #sidebar .sidebar-navmenu {
   margin-top: 2rem;
 }
 #sidebar .sidebar-navmenu .sidebar-navitem {
-  margin: 1rem 0;
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+  border-radius: 0.45rem;
   color: #000;
 }
 #sidebar .sidebar-navmenu .sidebar-navitem.active {
-  font-family: "roboto-bold";
+  background-color: #e8ecef;
+}
+@media screen and (min-width: 768px) {
+  #sidebar {
+    width: 15rem;
+  }
+  #sidebar .sidebar-navitem {
+    text-align: left;
+  }
+  #sidebar .sidebar-navitem.active {
+    font-family: "roboto-bold";
+    background: none !important;
+  }
 }
 
 #navbar {
   margin-bottom: 1rem;
-  padding-left: 15rem;
   width: 100%;
-  padding: 1.5rem 1.5rem 1.5rem 15rem;
+  padding: 1.5rem 1.5rem 1.5rem 3rem;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
 }
 #navbar .search-container {
-  width: 30%;
+  width: 60%;
   position: relative;
 }
 #navbar .search-container input {
@@ -104,19 +133,20 @@ input.form-control:focus {
   top: 50%;
   transform: translateY(-50%);
 }
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) {
+  #navbar .search-container {
+    width: 60%;
+    padding-left: 15rem !important;
+  }
+}
+@media screen and (min-width: 991px) {
+  #navbar .search-container {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1200px) {
   #navbar .search-container {
     width: 40%;
-  }
-}
-@media screen and (max-width: 768px) {
-  #navbar .search-container {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 576px) {
-  #navbar .search-container {
-    width: 75%;
   }
 }
 #navbar .user-button {
@@ -135,7 +165,39 @@ input.form-control:focus {
 }
 
 #dashboard-body {
-  padding-left: calc(15rem + 0.75rem);
+  padding-left: 3rem;
+}
+#dashboard-body .summary-thumb > div, #dashboard-body .summary-thumb p {
+  cursor: pointer;
+}
+#dashboard-body .summary-thumb > div {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 100px;
+  aspect-ratio: 1/0.85;
+  background-color: #cad3db;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#dashboard-body .summary-thumb > div i {
+  display: block;
+  width: 48px;
+  text-align: center;
+  aspect-ratio: 1/1;
+  font-size: 1.25rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  line-height: 48px;
+}
+#dashboard-body .summary-thumb:nth-child(even) > div {
+  background-color: #e8ecef;
+}
+@media screen and (min-width: 768px) {
+  #dashboard-body {
+    padding-left: 15rem;
+  }
 }
 
 * {
@@ -152,4 +214,8 @@ a {
 
 ul, ol, dl {
   list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "roboto-bold";
 }/*# sourceMappingURL=styles.css.map */

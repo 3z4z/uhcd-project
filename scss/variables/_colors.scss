@@ -1,11 +1,14 @@
 $primary: #0F161E;
 $black: #000;
 
+$gray-700: #e8ecef;
+$gray-600: #cad3db;
+
 $input-bg: #EEF1F4;
 $input-border-color: $black;
 $input-placeholder-color: #525252;
 
-$sidebar-bg: #cad3db;
+$sidebar-bg: $gray-600;
 
 // class names
 .text-black {

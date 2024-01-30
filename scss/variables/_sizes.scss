@@ -1,1 +1,13 @@
 $sidebar-width: 15rem;
+$sidebar-collapsed-width: 3rem;
+.container {
+    @media screen and (min-width: 1200px) {
+        max-width: 1075px;
+    }
+    @media screen and (min-width: 1600px) {
+        max-width: 1175px;
+    }
+    @media screen and (min-width: 1800px) {
+        max-width: 1500px;
+    }
+}

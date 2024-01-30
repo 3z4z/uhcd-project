@@ -4,15 +4,27 @@
     left: 0;
     height: 100vh;
     overflow-y: auto;
-    width: $sidebar-width;
+    width: $sidebar-collapsed-width;
     background-color: $sidebar-bg;
     .sidebar-navmenu {
         margin-top: 2rem;
         .sidebar-navitem {
-            margin: 1rem 0;
+            cursor: pointer;
+            margin: 1rem 0.5rem;
+            border-radius: 0.45rem;
             color: $black;
             &.active {
+                background-color: $gray-700;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        width: $sidebar-width;
+        .sidebar-navitem {
+            text-align: left;
+            &.active {
                 font-family: 'roboto-bold';
+                background: none !important;
             }
         }
     }

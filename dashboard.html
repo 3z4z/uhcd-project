@@ -10,14 +10,32 @@
 </head>
 <body>
     <div id="sidebar">
-        <div class="sidebar-logo w-50 mx-auto bg-white mt-3 p-3 rounded-4">
-            <img class="w-100" src="/assets/images/uhcd-logo.png" alt="">
+        <div class="mt-4 mt-md-0">
+            <div class="d-md-block d-none sidebar-logo w-75 mx-auto bg-white mt-3 py-2 px-4 rounded-4">
+                <img class="w-100" src="/assets/images/uhcd-logo.png" alt="">
+            </div>
+            <button class="d-md-none d-block btn text-gray fs-5">
+                <i class="ri-menu-2-line"></i>
+            </button>
         </div>
-        <ul class="sidebar-navmenu">
-            <li class="sidebar-navitem active">Home</li>
-            <li class="sidebar-navitem">All Childs/Case</li>
-            <li class="sidebar-navitem">Users</li>
-            <li>Sponsors</li>
+        <ul class="sidebar-navmenu p-0 ps-md-4 text-center">
+            <li class="d-none d-md-block sidebar-navitem active">Home</li>
+            <li class="d-none d-md-block sidebar-navitem">All Childs/Case</li>
+            <li class="d-none d-md-block sidebar-navitem">Users</li>
+            <li class="d-none d-md-block sidebar-navitem">Sponsors</li>
+            <!-- for mobile view -->
+            <li class="d-block d-md-none sidebar-navitem active">
+                <i class="ri-home-heart-line text-gray fs-5"></i>
+            </li>
+            <li class="d-block d-md-none sidebar-navitem">
+                <i class="ri-group-2-line text-gray fs-5"></i>
+            </li>
+            <li class="d-block d-md-none sidebar-navitem">
+                <i class="ri-team-line text-gray fs-5"></i>
+            </li>
+            <li class="d-block d-md-none sidebar-navitem">
+                <i class="ri-user-star-line text-gray fs-5"></i>
+            </li>
         </ul>
     </div>
     <div id="navbar" class="d-flex justify-content-between">
@@ -33,8 +51,221 @@
             </button>
         </div>
     </div>
-    <div id="dashboard-body">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam assumenda distinctio voluptatem, amet laudantium recusandae, optio alias vitae id dolor dicta sint culpa voluptatibus neque possimus. Quae tenetur architecto, rem minus vitae unde quidem voluptate consequatur culpa autem nihil harum at neque aliquid reiciendis possimus fugiat voluptas porro reprehenderit numquam, odio aut. Animi incidunt voluptates consequuntur neque iste dicta, aliquid quos totam voluptatibus magni necessitatibus alias magnam provident perferendis natus minima deserunt cumque amet corrupti iusto nulla doloribus voluptas officiis. Eius pariatur excepturi alias facere, voluptatem facilis sequi omnis reprehenderit, voluptates deserunt nemo dicta vero blanditiis, qui est quod dolorem.</p>
+    <div id="dashboard-body" class="py-5">
+        <div class="container">
+            <div class="px-4 mb-5">
+                <h6 class="text-black mb-4">Quick Summary</h6>
+                <div class="d-flex justify-content-xl-between flex-wrap">
+                    <div class="summary-thumb text-center mb-3 mb-xl-0">
+                        <div>
+                            <i class="ri-user-fill text-black"></i>
+                        </div>
+                        <p class="mb-0 mt-3">Todays<br>Case</p>
+                    </div>
+                    <div class="summary-thumb text-center mb-3 mb-xl-0">
+                        <div>
+                            <i class="ri-user-fill text-black"></i>
+                        </div>
+                        <p class="mb-0 mt-3">Case<br>This Week</p>
+                    </div>
+                    <div class="summary-thumb text-center mb-3 mb-xl-0">
+                        <div>
+                            <i class="ri-user-fill text-black"></i>
+                        </div>
+                        <p class="mb-0 mt-3">Case<br>This Month</p>
+                    </div>
+                    <div class="summary-thumb text-center mb-3 mb-xl-0">
+                        <div>
+                            <i class="ri-user-fill text-black"></i>
+                        </div>
+                        <p class="mb-0 mt-3">Total<br>Case</p>
+                    </div>
+                    <div class="summary-thumb text-center mb-3 mb-xl-0">
+                        <div>
+                            <i class="ri-user-fill text-black"></i>
+                        </div>
+                        <p class="mb-0 mt-3">Total<br>Sponsor</p>
+                    </div>
+                    <div class="summary-thumb text-center mb-3 mb-xl-0">
+                        <div>
+                            <i class="ri-user-fill text-black"></i>
+                        </div>
+                        <p class="mb-0 mt-3">Total<br>Physicians</p>
+                    </div>
+                    <div class="summary-thumb text-center mb-3 mb-xl-0">
+                        <div>
+                            <i class="ri-user-fill text-black"></i>
+                        </div>
+                        <p class="mb-0 mt-3">Total<br>Therapist</p>
+                    </div>
+                    <div class="summary-thumb text-center mb-3 mb-xl-0">
+                        <div>
+                            <i class="ri-user-fill text-black"></i>
+                        </div>
+                        <p class="mb-0 mt-3">Total<br>Field Workers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12 pb-3 pb-xl-0">
+                    <div class="border border-black rounded-4 pt-5 pb-4 px-4 h-100">
+                        <h6 class="mb-4">Case by Divisions</h6>
+                        <ul class="p-0 m-0">
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Dhaka</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Barishal</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Chattogram</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Khulna</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Mymensingh</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Rajshahi</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Rangpur</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Sylhet</span>
+                                <span>48</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12 pb-3 pb-xl-0">
+                    <div class="border border-black rounded-4 pt-5 pb-4 px-4 h-100">
+                        <h6 class="mb-4">Case by Age</h6>
+                        <ul class="p-0 m-0">
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>0 - 1 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>1 - 2 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>2 - 3 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>3 - 4 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>4 - 5 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>5 - 6 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>6 - 7 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>7 - 8 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>8 - 9 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span>9 - 10 Year</span>
+                                <span>48</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12 pb-3 pb-xl-0 d-flex flex-column">
+                    <div class="border border-black rounded-4 pt-5 pb-4 px-4 h-100 mb-3">
+                        <h6 class="mb-4">Case by Gender</h6>
+                        <ul class="p-0 m-0">
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Male</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Female</span>
+                                <span>48</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="border border-black rounded-4 pt-5 pb-4 px-4 h-100">
+                        <h6 class="mb-4">Sponsorship Status</h6>
+                        <ul class="p-0 m-0">
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Received</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>Not-received</span>
+                                <span>48</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12 pb-3 pb-xl-0">
+                    <div class="border border-black rounded-4 pt-5 pb-4 px-4 h-100">
+                        <h6 class="mb-4">Case by Disability Type</h6>
+                        <ul class="p-0 m-0">
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>0 - 1 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>1 - 2 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>2 - 3 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>3 - 4 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>4 - 5 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>5 - 6 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>6 - 7 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between mb-3">
+                                <span>7 - 8 Year</span>
+                                <span>48</span>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <span>8 - 9 Year</span>
+                                <span>48</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
 </body>

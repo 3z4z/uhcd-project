@@ -2,5 +2,39 @@
 @import '../components/navbar';
 
 #dashboard-body {
-    padding-left: calc(#{$sidebar-width} + 0.75rem );
+    padding-left: $sidebar-collapsed-width;
+    .summary-thumb {
+        > div,p {
+            cursor: pointer;
+        }
+        > div {    
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            width: 100px;
+            aspect-ratio: 1 / 0.85;
+            background-color: $sidebar-bg;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+                display: block;
+                width: 48px;
+                text-align: center;
+                aspect-ratio: 1 / 1;
+                font-size: 1.25rem;
+                border: 1px solid $black;
+                border-radius: 50%;
+                line-height: 48px;
+            }
+        }
+        &:nth-child(even) {
+            > div {
+                background-color: $gray-700;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        padding-left: $sidebar-width;
+    }
 }
