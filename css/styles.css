@@ -38,6 +38,9 @@ input.form-control {
   border: none;
   box-shadow: 0 0 0 0.45px #000;
 }
+input.form-control::-moz-placeholder {
+  color: #525252;
+}
 input.form-control::placeholder {
   color: #525252;
 }
@@ -57,21 +60,31 @@ input.form-control:focus {
 #login .login-card {
   border-radius: 1.1rem;
   padding-bottom: 2.25rem;
-  width: 50%;
+  width: 90%;
 }
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) {
   #login .login-card {
-    width: 75%;
+    width: 70%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 991px) {
   #login .login-card {
-    width: 85%;
+    width: 60%;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 1200px) {
   #login .login-card {
-    width: 95%;
+    width: 55%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #login .login-card {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #login .login-card {
+    width: 40%;
   }
 }
 #login .login-form button {
